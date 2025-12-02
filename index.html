@@ -1,13 +1,45 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>site-amor</title>
-  </head>
-  <body>
+    <title>💖 Nosso Love App - Versão Final</title>
+    
+    <!-- Tailwind CDN (Solução para Erros de Compilação) -->
+    <!-- Carrega o Tailwind CSS sem precisar de configuração local (PostCSS/Node) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração para Cores Pastel Personalizadas (Tailwind JIT) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Cores Pastel Personalizadas
+                        'rose-300': '#fca5a5', 
+                        'rose-500': '#f43f5e', 
+                        'rose-50': '#fff1f2',
+                        'rose-100': '#ffe4e6', // Para hover
+                        'rose-900': '#881337',
+                        'violet-300': '#c4b5fd', 
+                        'violet-400': '#a78bfa',
+                        'violet-700': '#7c3aed', 
+                        'violet-900': '#3c0c7b',
+                        'violet-100': '#ede9fe',
+                        
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Fontes (Inter é uma fonte limpa e moderna) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+<body class="bg-pink-50">
     <div id="root"></div>
+    <!-- Script de inicialização do React/Vite -->
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
 </html>
